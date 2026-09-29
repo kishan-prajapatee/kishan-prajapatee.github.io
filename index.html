@@ -5,9 +5,9 @@
 <meta property="og:image" content="https://kishan-prajapatee.github.io/your-image.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kishan Prajapati — Full Stack Developer (.NET · Angular · SQL Server)</title>
-<meta name="description" content="Full stack developer, ~4 years. .NET, Angular, SQL Server. Clients in the US, Netherlands, Sweden, Denmark and Finland.">
+<meta name="description" content="Full stack developer, 3+ years. .NET, Angular, SQL Server. Clients in the US, Netherlands, Sweden, Denmark and Finland.">
 <meta property="og:title" content="Kishan Prajapati — Full Stack Developer">
-<meta property="og:description" content="~4 years building .NET + Angular apps for clients in 5 countries. Warranty, claims, ERP integration, fleet management.">
+<meta property="og:description" content="3+ years building .NET + Angular apps for clients in 5 countries. Warranty, claims, ERP integration, fleet management.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#8EA6F7">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23FF6A00%22/%3E%3Ctext x=%2250%22 y=%2266%22 font-size=%2244%22 font-family=%22Arial%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22white%22%3EKP%3C/text%3E%3C/svg%3E">
@@ -378,7 +378,7 @@ const PORTFOLIO = {
   role: "Full Stack Developer",
   stack: ".NET · C# · Angular · SQL Server",
   masthead: "Full stack, end to end",
-  mastheadSub: "~4 years of .NET and Angular work for clients in 5 countries.",
+  mastheadSub: "3+ years of .NET and Angular work for clients in 5 countries.",
   status: "Open to full-stack roles · from Nov 2026",
   location: "Mehsana, Gujarat, India",
   email: "Prajapatee.Kishan@gmail.com",
@@ -392,8 +392,8 @@ const PORTFOLIO = {
   // Phone-frame tile: most recent role only — every number here is Roima.
   latest: {
     company: "Roima Intelligence",
-    period: "Dec 2025 – Oct 2026",
-    rows: [["100+", "tickets closed"], ["15", "client projects"], ["7", "got warranty & claims features"], ["11", "months"]]
+    period: "Dec 2025 – Sep 2026",
+    rows: [["100+", "tickets closed"], ["15", "client projects"], ["7", "clients got warranty & claims features"], ["11", "months"]]
   },
 
   weekTitle: "A typical week on client projects",
@@ -410,11 +410,11 @@ const PORTFOLIO = {
     { year: "2023", g: 12, r: 0,  note: "Internship until Aug, then Software Engineer from Sep." },
     { year: "2024", g: 12, r: 0,  note: "Fleet management portal, Power BI, US & Netherlands clients." },
     { year: "2025", g: 10, r: 1,  note: "Left Gateway (Oct). Joined Roima (Dec)." },
-    { year: "2026", g: 0,  r: 10, note: "Warranty, claims and ERP work for Nordic clients." }
+    { year: "2026", g: 0,  r: 9, note: "Warranty, claims and ERP work for Nordic clients." }
   ],
 
   roles: [
-    { id: "roima", years: ["2025","2026"], title: "Full Stack & BI Developer", org: "Roima Intelligence · Ahmedabad", when: "Dec 2025 – Oct 2026",
+    { id: "roima", years: ["2025","2026"], title: "Software Developer", org: "Roima Intelligence · Ahmedabad", when: "Dec 2025 – Sep 2026",
       points: [
         "Multi-tenant B2B commerce platform with live ERP integration — ASP.NET MVC (.NET 4.8), C#, Razor, SQL Server.",
         "Worked directly with clients in Sweden, Denmark and Finland on calls and in writing: requirements, spec clarification, release confirmation.",
@@ -499,7 +499,7 @@ const PORTFOLIO = {
     ["Backend", ["C#", "ASP.NET Core", "ASP.NET MVC (.NET 4.8)", "Entity Framework", "REST APIs", "Razor"]],
     ["Frontend", ["Angular", "TypeScript", "JavaScript", "HTML/CSS", "Angular Material", "Kendo UI", "Bootstrap"]],
     ["Database", ["SQL Server", "T-SQL", "Locking & transactions", "Query tuning", "PostgreSQL"]],
-    ["BI & tools", ["Power BI", "Power Apps", "Power Automate", "Git", "Azure DevOps", "Jira", "Postman"]]
+    ["BI & tools", ["Power BI", "Git", "Azure DevOps", "Jira", "Postman"]]
   ],
   skillsFoot: "Domains: automotive, fleet, travel, manufacturing B2B."
 };
@@ -537,7 +537,7 @@ $("#toasts").innerHTML = P.toasts.map(([b,s,t]) => `<div class="toast"><span cla
 const totalMonths = P.years.reduce((a,y)=>a+y.g+y.r,0);
 const yrs = Math.floor(totalMonths/12), mos = totalMonths%12;
 $("#chart-big").textContent = `${yrs}y ${mos}m`;
-$("#chart-sub").textContent = `${P.roles.length} roles · 2 employers · Nov 2022 – Oct 2026`;
+$("#chart-sub").textContent = `${P.roles.length} roles · 2 employers · Nov 2022 – Sep 2026`;
 $("#legend").innerHTML = `<span><i style="background:#fff"></i>${esc(P.employers.g)}</span><span><i style="background:var(--sky)"></i>${esc(P.employers.r)}</span>`;
 $("#bars").innerHTML = P.years.map(y => {
   const pct = v => (v/12*100).toFixed(1) + "%";
